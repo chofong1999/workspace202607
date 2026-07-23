@@ -1,0 +1,60 @@
+{
+  "module_id": "MOD-IMAGE-WORKFLOW-ZH",
+  "name": "AI通用作圖系統",
+  "version": "0.3",
+  "status": "standalone-test",
+  "language": "zh-Hant",
+  "entry": "00_先讀_狀態與啟動.md",
+  "future_host": "AI工作記憶與交接平台2.x",
+  "core_compatibility": "尚未定義",
+  "purpose": "保存做圖規格、樣板、候選方案、當前圖片契約與品質紀錄，使AI能持續產生一致成果。",
+  "owns": [
+    "做圖流程",
+    "視覺規格",
+    "樣板與元件",
+    "圖片任務狀態",
+    "圖片QA紀錄"
+  ],
+  "does_not_own": [
+    "AI員工身分",
+    "交接世代",
+    "核心交接狀態",
+    "其他模組資料"
+  ],
+  "integration": {
+    "handoff_mode": "optional-sibling",
+    "handoff_rule": "寫入型作圖功能在首次寫入前自動依既有交接制度檢查並取得工作權；只讀功能不接手；不得修改、降低或繞過交接條件。",
+    "write_preflight": "auto-handoff-if-present",
+    "read_only_handoff": "none",
+    "already_owner": "continue-without-reacquire",
+    "blocked_handoff": "stop-and-report-actual-blocker",
+    "no_handoff_system": "standalone-allowed",
+    "external_spec_mode": "reference-first"
+  },
+  "active_files": [
+    "module_manifest.json",
+    "00_先讀_狀態與啟動.md",
+    "01_通用作圖流程.md",
+    "02_通用品質規則.md",
+    "03_格式與狀態定義.md",
+    "10_本工作做圖說明.md",
+    "11_本工作視覺規格.md",
+    "12_當前圖片與批次.md",
+    "13_外部規格與來源.md",
+    "20_樣板與元件登錄.md",
+    "21_候選方案登錄.md",
+    "30_製作與QA紀錄.md",
+    "使用者_制度與使用說明.md",
+    "80_按需/00_首次建立.md",
+    "80_按需/10_候選方案與樣板確認.md",
+    "80_按需/20_異常與失敗處理.md",
+    "80_按需/30_規格更新與影響評估.md",
+    "80_按需/40_批次製作.md",
+    "80_按需/50_系統更新.md",
+    "80_按需/60_外部規格同步.md",
+    "80_按需/70_交接系統協作.md",
+    "90_內部歷史/索引.md",
+    "工作資料/README.md"
+  ],
+  "support_files": []
+}

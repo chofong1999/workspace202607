@@ -1,0 +1,86 @@
+{
+  "task": "IMG-MVWEB0717-COLOR-001",
+  "source": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\01_原始截圖\\mvweb0717\\show__p01.png",
+  "output": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\02_標註成品\\01_未驗收\\mvweb0717\\show_標註.png",
+  "scheme": "CAND-EL-001 scoped to mvweb0717",
+  "elEvidence": [
+    {
+      "line": 19,
+      "expression": "${requestScope.emps}",
+      "left": 436,
+      "right": 631,
+      "top": 442,
+      "bottom": 456,
+      "targetGlyphPixelsChanged": 805,
+      "adjacentPixelsChanged": 0
+    },
+    {
+      "line": 21,
+      "expression": "${employee.employeeNumber}",
+      "left": 243,
+      "right": 493,
+      "top": 480,
+      "bottom": 494,
+      "targetGlyphPixelsChanged": 1167,
+      "adjacentPixelsChanged": 0
+    },
+    {
+      "line": 22,
+      "expression": "${employee.firstName}",
+      "left": 243,
+      "right": 447,
+      "top": 499,
+      "bottom": 513,
+      "targetGlyphPixelsChanged": 938,
+      "adjacentPixelsChanged": 0
+    },
+    {
+      "line": 22,
+      "expression": "${employee.lastName}",
+      "left": 445,
+      "right": 640,
+      "top": 499,
+      "bottom": 513,
+      "targetGlyphPixelsChanged": 908,
+      "adjacentPixelsChanged": 0
+    },
+    {
+      "line": 23,
+      "expression": "${employee.email}",
+      "left": 243,
+      "right": 410,
+      "top": 518,
+      "bottom": 532,
+      "targetGlyphPixelsChanged": 742,
+      "adjacentPixelsChanged": 0
+    },
+    {
+      "line": 24,
+      "expression": "${employee.jobTitle}",
+      "left": 243,
+      "right": 437,
+      "top": 537,
+      "bottom": 551,
+      "targetGlyphPixelsChanged": 841,
+      "adjacentPixelsChanged": 0
+    },
+    {
+      "line": 25,
+      "expression": "${employee.officeCode}",
+      "left": 243,
+      "right": 456,
+      "top": 556,
+      "bottom": 570,
+      "targetGlyphPixelsChanged": 925,
+      "adjacentPixelsChanged": 0
+    }
+  ],
+  "checks": {
+    "openable": true,
+    "targetTabVisible": true,
+    "fixedWidthFormulaUsed": false,
+    "adjacentContentChanged": false,
+    "legendEightItems": true
+  },
+  "status": "PASS"
+}

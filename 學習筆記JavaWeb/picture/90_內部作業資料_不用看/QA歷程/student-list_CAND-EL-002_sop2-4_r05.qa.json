@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "task": "IMG-MVWEB0717-EL-COMPARE-001",
+  "candidate": "CAND-EL-002",
+  "sop": "2.4",
+  "source": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\01_原始截圖\\mvweb0717\\student-list__p01.png",
+  "output": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\90_內部作業資料_不用看\\QA歷程\\student-list_CAND-EL-002_sop2-4_r05.png",
+  "round": 5,
+  "coordinate_method": "per-expression original-image pixel-run measurement; no fixed-width formula",
+  "qa_coordinate_method": "independent source pixel component bounds with original-glyph and neighbor comparison",
+  "metrics": {
+    "expression_count": 7,
+    "original_glyph_pixels_changed": 0,
+    "underline_width_px": 2,
+    "endpoint_down_px": 3,
+    "expressions": [
+      {
+        "line": 30,
+        "text": "${requestScope.students}",
+        "pixel_bounds": [
+          365,
+          586
+        ],
+        "line_rows": [
+          222,
+          222
+        ],
+        "left_endpoint_pixels": 6,
+        "right_endpoint_pixels": 6,
+        "pass": true
+      },
+      {
+        "line": 32,
+        "text": "${s.id}",
+        "pixel_bounds": [
+          246,
+          307
+        ],
+        "line_rows": [
+          62,
+          62
+        ],
+        "left_endpoint_pixels": 6,
+        "right_endpoint_pixels": 6,
+        "pass": true
+      },
+      {
+        "line": 33,
+        "text": "${s.name}",
+        "pixel_bounds": [
+          246,
+          343
+        ],
+        "line_rows": [
+          98,
+          98
+        ],
+        "left_endpoint_pixels": 6,
+        "right_endpoint_pixels": 6,
+        "pass": true
+      },
+      {
+        "line": 34,
+        "text": "${s.email}",
+        "pixel_bounds": [
+          246,
+          352
+        ],
+        "line_rows": [
+          107,
+          107
+        ],
+        "left_endpoint_pixels": 6,
+        "right_endpoint_pixels": 6,
+        "pass": true
+      },
+      {
+        "line": 35,
+        "text": "${s.age}",
+        "pixel_bounds": [
+          246,
+          325
+        ],
+        "line_rows": [
+          80,
+          80
+        ],
+        "left_endpoint_pixels": 6,
+        "right_endpoint_pixels": 6,
+        "pass": true
+      },
+      {
+        "line": 37,
+        "text": "${s.id}",
+        "pixel_bounds": [
+          534,
+          595
+        ],
+        "line_rows": [
+          62,
+          62
+        ],
+        "left_endpoint_pixels": 6,
+        "right_endpoint_pixels": 6,
+        "pass": true
+      },
+      {
+        "line": 38,
+        "text": "${s.id}",
+        "pixel_bounds": [
+          981,
+          1042
+        ],
+        "line_rows": [
+          62,
+          62
+        ],
+        "left_endpoint_pixels": 6,
+        "right_endpoint_pixels": 6,
+        "pass": true
+      }
+    ]
+  },
+  "visual_checks": {
+    "full_image_100": "PASS",
+    "structure_200": "PASS",
+    "el_pixels_400": "PASS"
+  }
+}

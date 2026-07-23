@@ -1,0 +1,26 @@
+{
+  "task": "IMG-MVWEB0717-COLOR-001",
+  "source": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\01_原始截圖\\mvweb0717\\firstMVC__p01.png",
+  "output": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\02_標註成品\\01_未驗收\\mvweb0717\\firstMVC_標註.png",
+  "scheme": "CAND-EL-001 scoped to mvweb0717",
+  "elEvidence": [
+    {
+      "line": 11,
+      "expression": "${requestScope.first}",
+      "left": 206,
+      "right": 406,
+      "top": 287,
+      "bottom": 307,
+      "targetGlyphPixelsChanged": 1061,
+      "adjacentPixelsChanged": 0
+    }
+  ],
+  "checks": {
+    "openable": true,
+    "targetTabVisible": true,
+    "fixedWidthFormulaUsed": false,
+    "adjacentContentChanged": false,
+    "legendEightItems": true
+  },
+  "status": "PASS"
+}

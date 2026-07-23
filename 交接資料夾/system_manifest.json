@@ -1,0 +1,40 @@
+{
+  "system_id": "AI-HANDOFF-ZH",
+  "system_name": "AI工作交接通用樣板",
+  "version": "1.10",
+  "schema": 1,
+  "encoding": "UTF-8",
+  "entry": "00_先讀_身分與啟動.md",
+  "active_core_files": [
+    "00_先讀_身分與啟動.md",
+    "01_日常接手與交接.md",
+    "80_按需/00_首次交接.md",
+    "80_按需/10_異常處理.md",
+    "80_按需/20_知識庫管理.md",
+    "80_按需/30_版本升級.md",
+    "使用者_制度與使用說明.md",
+    "system_manifest.json"
+  ],
+  "work_data_files": [
+    "10_工作完整說明.md",
+    "11_本工作規則.md",
+    "12_當前工作.md",
+    "20_員工表.md",
+    "30_更新日誌.md",
+    "使用者_目前狀態與待辦.md",
+    "90_封存/封存索引.md"
+  ],
+  "managed_dynamic_paths": [
+    "80_按需/知識庫/"
+  ],
+  "upgrade_policy": {
+    "build_in_temporary_location": true,
+    "copy_old_core_files": false,
+    "preserve_work_data": true,
+    "preserve_referenced_work_attachments": true,
+    "preserve_old_folder_in_place_after_rename": true,
+    "create_zip_backup": false,
+    "revalidate_unchanged_results": false,
+    "reject_duplicate_active_roles": true
+  }
+}

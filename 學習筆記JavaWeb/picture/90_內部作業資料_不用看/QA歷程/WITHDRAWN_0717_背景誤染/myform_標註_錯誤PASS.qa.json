@@ -1,0 +1,15 @@
+{
+  "task": "IMG-MVWEB0717-COLOR-001",
+  "source": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\01_原始截圖\\mvweb0717\\HTML\\myform__p01.png",
+  "output": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\02_標註成品\\01_未驗收\\mvweb0717\\myform_標註.png",
+  "scheme": "CAND-EL-001 scoped to mvweb0717",
+  "elEvidence": [],
+  "checks": {
+    "openable": true,
+    "targetTabVisible": true,
+    "fixedWidthFormulaUsed": false,
+    "adjacentContentChanged": false,
+    "legendEightItems": true
+  },
+  "status": "PASS"
+}

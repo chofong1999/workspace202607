@@ -1,0 +1,185 @@
+{
+  "status": "FAIL_EL_BOUNDARY",
+  "task": "IMG-MVWEB0717-EL-COMPARE-001",
+  "candidate": "CAND-EL-002",
+  "sop": "2.4",
+  "source": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\01_原始截圖\\mvweb0717\\student-list__p01.png",
+  "output": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\90_內部作業資料_不用看\\QA歷程\\student-list_CAND-EL-002_sop2-4_r04.png",
+  "el_expressions": [
+    {
+      "line": 30,
+      "text": "${requestScope.students}",
+      "start": 34,
+      "end": 58,
+      "x1": 401,
+      "x2": 634,
+      "y1": 649,
+      "y2": 663
+    },
+    {
+      "line": 32,
+      "text": "${s.id}",
+      "start": 20,
+      "end": 27,
+      "x1": 264,
+      "x2": 331,
+      "y1": 687,
+      "y2": 701
+    },
+    {
+      "line": 33,
+      "text": "${s.name}",
+      "start": 20,
+      "end": 29,
+      "x1": 264,
+      "x2": 351,
+      "y1": 706,
+      "y2": 720
+    },
+    {
+      "line": 34,
+      "text": "${s.email}",
+      "start": 20,
+      "end": 30,
+      "x1": 264,
+      "x2": 361,
+      "y1": 725,
+      "y2": 739
+    },
+    {
+      "line": 35,
+      "text": "${s.age}",
+      "start": 20,
+      "end": 28,
+      "x1": 264,
+      "x2": 341,
+      "y1": 744,
+      "y2": 758
+    },
+    {
+      "line": 37,
+      "text": "${s.id}",
+      "start": 52,
+      "end": 59,
+      "x1": 576,
+      "x2": 643,
+      "y1": 782,
+      "y2": 796
+    },
+    {
+      "line": 38,
+      "text": "${s.id}",
+      "start": 100,
+      "end": 107,
+      "x1": 1044,
+      "x2": 1111,
+      "y1": 801,
+      "y2": 815
+    }
+  ],
+  "underline_width_px": 2,
+  "endpoint_down_px": 3,
+  "original_glyph_pixels_changed": 0,
+  "notes": [
+    "Generated directly from the unannotated Eclipse screenshot.",
+    "Candidate comparison only; not a confirmed template or batch result."
+  ],
+  "issues": [
+    "Fixed-width coordinate formula shifted EL bounds right.",
+    "$ glyph was omitted.",
+    "Right-side HTML characters or empty space were incorrectly marked.",
+    "Previous QA reused the same incorrect coordinates and was therefore invalid."
+  ],
+  "round": 4,
+  "metrics": {
+    "el_expression_count": 7,
+    "original_glyph_pixels_changed": 0,
+    "underline_width_px": 2,
+    "endpoint_down_px": 3,
+    "geometry": [
+      {
+        "line": 30,
+        "width": 234,
+        "lineRows": [
+          234,
+          234
+        ],
+        "leftDown": 6,
+        "rightDown": 6,
+        "pass": true
+      },
+      {
+        "line": 32,
+        "width": 68,
+        "lineRows": [
+          68,
+          68
+        ],
+        "leftDown": 6,
+        "rightDown": 6,
+        "pass": true
+      },
+      {
+        "line": 33,
+        "width": 88,
+        "lineRows": [
+          88,
+          88
+        ],
+        "leftDown": 6,
+        "rightDown": 6,
+        "pass": true
+      },
+      {
+        "line": 34,
+        "width": 98,
+        "lineRows": [
+          98,
+          98
+        ],
+        "leftDown": 6,
+        "rightDown": 6,
+        "pass": true
+      },
+      {
+        "line": 35,
+        "width": 78,
+        "lineRows": [
+          78,
+          78
+        ],
+        "leftDown": 6,
+        "rightDown": 6,
+        "pass": true
+      },
+      {
+        "line": 37,
+        "width": 68,
+        "lineRows": [
+          68,
+          68
+        ],
+        "leftDown": 6,
+        "rightDown": 6,
+        "pass": true
+      },
+      {
+        "line": 38,
+        "width": 68,
+        "lineRows": [
+          68,
+          68
+        ],
+        "leftDown": 6,
+        "rightDown": 6,
+        "pass": true
+      }
+    ],
+    "visual_checks": {
+      "full_image_100": "PASS",
+      "structure_200": "PASS",
+      "el_pixels_400": "PASS"
+    }
+  },
+  "invalidated_at": "2026-07-23T13:42:00+08:00"
+}

@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "task": "IMG-MVWEB0717-COLOR-001",
+  "candidate": "CAND-EL-001",
+  "sop": "2.4",
+  "source": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\01_原始截圖\\mvweb0717\\student-list__p01.png",
+  "output": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\02_標註成品\\01_未驗收\\mvweb0717\\student-list_標註.png",
+  "round": 5,
+  "coordinate_method": "per-expression original-image pixel-run measurement; no fixed-width formula",
+  "qa_coordinate_method": "independent source pixel component bounds with left/right neighbor comparison",
+  "metrics": {
+    "expression_count": 7,
+    "target_glyph_pixels": 2815,
+    "unchanged_target_pixels": 0,
+    "changed_adjacent_glyph_pixels": 0,
+    "expressions": [
+      {
+        "line": 30,
+        "text": "${requestScope.students}",
+        "pixel_bounds": [
+          365,
+          651,
+          586,
+          663
+        ],
+        "ink_pixels": 889,
+        "unchanged_target_pixels": 0,
+        "left_neighbor_changed_pixels": 0,
+        "right_neighbor_changed_pixels": 0
+      },
+      {
+        "line": 32,
+        "text": "${s.id}",
+        "pixel_bounds": [
+          246,
+          689,
+          307,
+          701
+        ],
+        "ink_pixels": 253,
+        "unchanged_target_pixels": 0,
+        "left_neighbor_changed_pixels": 0,
+        "right_neighbor_changed_pixels": 0
+      },
+      {
+        "line": 33,
+        "text": "${s.name}",
+        "pixel_bounds": [
+          246,
+          708,
+          343,
+          720
+        ],
+        "ink_pixels": 403,
+        "unchanged_target_pixels": 0,
+        "left_neighbor_changed_pixels": 0,
+        "right_neighbor_changed_pixels": 0
+      },
+      {
+        "line": 34,
+        "text": "${s.email}",
+        "pixel_bounds": [
+          246,
+          727,
+          352,
+          739
+        ],
+        "ink_pixels": 442,
+        "unchanged_target_pixels": 0,
+        "left_neighbor_changed_pixels": 0,
+        "right_neighbor_changed_pixels": 0
+      },
+      {
+        "line": 35,
+        "text": "${s.age}",
+        "pixel_bounds": [
+          246,
+          746,
+          325,
+          758
+        ],
+        "ink_pixels": 322,
+        "unchanged_target_pixels": 0,
+        "left_neighbor_changed_pixels": 0,
+        "right_neighbor_changed_pixels": 0
+      },
+      {
+        "line": 37,
+        "text": "${s.id}",
+        "pixel_bounds": [
+          534,
+          784,
+          595,
+          796
+        ],
+        "ink_pixels": 253,
+        "unchanged_target_pixels": 0,
+        "left_neighbor_changed_pixels": 0,
+        "right_neighbor_changed_pixels": 0
+      },
+      {
+        "line": 38,
+        "text": "${s.id}",
+        "pixel_bounds": [
+          981,
+          803,
+          1042,
+          815
+        ],
+        "ink_pixels": 253,
+        "unchanged_target_pixels": 0,
+        "left_neighbor_changed_pixels": 0,
+        "right_neighbor_changed_pixels": 0
+      }
+    ]
+  },
+  "visual_checks": {
+    "full_image_100": "PASS",
+    "structure_200": "PASS",
+    "el_pixels_400": "PASS"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "task": "IMG-MVWEB0717-COORD-TEST-001",
+  "revision": "r02",
+  "page": "show",
+  "source": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\01_原始截圖\\mvweb0717\\show__p01.png",
+  "output": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\02_標註成品\\00_樣板待確認\\0717_座標流程測試\\show_座標流程重測.png",
+  "geometry": {
+    "textOriginX": 60,
+    "characterPitch": 9,
+    "linePitch": 19,
+    "firstLineCenterY": 106.5,
+    "firstVisibleLine": 1,
+    "bottomMode": false,
+    "bottomOffsetAppliedTo": "all page elements"
+  },
+  "expressions": [
+    {
+      "line": 19,
+      "text": "${requestScope.emps}",
+      "start": 41,
+      "end": 61,
+      "cell": [
+        429,
+        440,
+        608,
+        457
+      ],
+      "bg": [
+        30,
+        31,
+        34
+      ],
+      "target": 762
+    },
+    {
+      "line": 21,
+      "text": "${employee.employeeNumber}",
+      "start": 20,
+      "end": 46,
+      "cell": [
+        240,
+        478,
+        473,
+        495
+      ],
+      "bg": [
+        30,
+        31,
+        34
+      ],
+      "target": 1127
+    },
+    {
+      "line": 22,
+      "text": "${employee.firstName}",
+      "start": 20,
+      "end": 41,
+      "cell": [
+        240,
+        497,
+        428,
+        514
+      ],
+      "bg": [
+        30,
+        31,
+        34
+      ],
+      "target": 878
+    },
+    {
+      "line": 22,
+      "text": "${employee.lastName}",
+      "start": 42,
+      "end": 62,
+      "cell": [
+        438,
+        497,
+        617,
+        514
+      ],
+      "bg": [
+        30,
+        31,
+        34
+      ],
+      "target": 855
+    },
+    {
+      "line": 23,
+      "text": "${employee.email}",
+      "start": 20,
+      "end": 37,
+      "cell": [
+        240,
+        516,
+        392,
+        533
+      ],
+      "bg": [
+        30,
+        31,
+        34
+      ],
+      "target": 701
+    },
+    {
+      "line": 24,
+      "text": "${employee.jobTitle}",
+      "start": 20,
+      "end": 40,
+      "cell": [
+        240,
+        535,
+        419,
+        552
+      ],
+      "bg": [
+        30,
+        31,
+        34
+      ],
+      "target": 806
+    },
+    {
+      "line": 25,
+      "text": "${employee.officeCode}",
+      "start": 20,
+      "end": 42,
+      "cell": [
+        240,
+        554,
+        437,
+        571
+      ],
+      "bg": [
+        30,
+        31,
+        34
+      ],
+      "target": 877
+    }
+  ],
+  "checks": {
+    "manual400Required": true,
+    "backgroundChangedPixels": 0,
+    "outsideCellChangedPixels": 0,
+    "firstDollarColored": "manual verified",
+    "closingBraceColored": "manual verified",
+    "outsideQuoteUnchanged": "manual verified",
+    "boxTextGap": "manual verified",
+    "status": "TEST_PASS"
+  },
+  "status": "TEST_PASS"
+}
