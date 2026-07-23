@@ -1,0 +1,15 @@
+{
+  "version": "1.4",
+  "status": "PASS",
+  "round": 2,
+  "source": "C:/workspace202607/JavaWeb學習筆記/picture/01_原始截圖/mvweb0716/bean-list__p01.png",
+  "previous_round": "FAIL",
+  "checks": {
+    "source_is_raw": true,
+    "el_changed_pixels": 2754,
+    "el_regions": 5,
+    "visual_100_percent": "PASS",
+    "visual_200_percent": "PASS",
+    "note": "r01 因說明框重疊失敗；r02 重新排版後通過"
+  }
+}

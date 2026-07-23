@@ -1,0 +1,81 @@
+package dao.Impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+import java.util.Optional;
+
+import dao.ProductDao;
+import model.Product;
+import util.DbConnection;
+
+public class ProductDaoImpl implements ProductDao {
+
+	@Override
+	public void insert(Product product) {
+		String sql = "INSERT INTO product (name, price, stock, category) VALUES (?, ?, ?, ?)";
+		try (Connection conn = DbConnection.getConnection();
+		     PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+		    ps.setString(1, product.getName());
+		    ps.setDouble(2, Double.parseDouble(product.getPrice().toString()));
+		    ps.setInt(3, product.getStock());
+		    ps.setString(4, product.getCategory());
+		    ps.executeUpdate();
+		    try (ResultSet rs = ps.getGeneratedKeys()) {
+		        if (rs.next()) {
+		            product.setId(rs.getInt(1));   // 將自增 ID 回寫到物件
+		        }
+		    }
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	@Override
+	public Optional<Product> findById(int id) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+	}
+
+	@Override
+	public List<Product> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> searchByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> findByCategory(String category) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(Product product) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public long count() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

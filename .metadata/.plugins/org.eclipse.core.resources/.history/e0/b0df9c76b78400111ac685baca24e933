@@ -1,0 +1,21 @@
+<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" errorPage="errorHandler.jsp"%>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>æ­åä¸­çï¼</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; text-align: center; }
+        .success { color: #4CAF50; font-size: 24px; }
+        .btn { padding: 10px 20px; background-color: #008CBA; color: white; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="success">
+        <h1>ð æ­åæ¨ï¼</h1>
+        <p>æ¨çä¸­äºï¼çæ¯å¤ªå²å®³äºï¼</p>
+    </div>
+    <br/>
+    <a href="guess.html" class="btn">åç©ä¸æ¬¡ï¼</a>
+</body>
+</html>

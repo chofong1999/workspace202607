@@ -1,0 +1,17 @@
+{
+  "sop": "1.5",
+  "status": "PASS",
+  "source": "C:/workspace202607/FirstWeb0713/src/main/java/HelloServlet.java",
+  "raw": "C:/workspace202607/JavaWeb學習筆記/picture/01_原始截圖/FirstWeb0713/Java/HelloServlet__p02.png",
+  "page": 2,
+  "visibleLines": [
+    33,
+    57
+  ],
+  "checks": {
+    "adjacentOverlap": false,
+    "maxConnectorBends": 0,
+    "elRegions": 0,
+    "callouts": 1
+  }
+}

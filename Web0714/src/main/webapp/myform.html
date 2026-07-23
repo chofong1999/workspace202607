@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表單範例 - Checkbox & Radio</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 40px auto; }
+        .form-group { margin-bottom: 15px; }
+        label { display: inline-block; margin-right: 15px; }
+        .btn { background: #007bff; color: white; padding: 8px 20px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>會員註冊表單</h2>
+    <form action="result.jsp" method="post">
+        <div class="form-group">
+            <label>姓名：</label>
+            <input type="text" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label>性別：</label>
+            <input type="radio" name="gender" value="male" required> 男性
+            <input type="radio" name="gender" value="female"> 女性
+            <input type="radio" name="gender" value="other"> 其他
+        </div>
+
+        <div class="form-group">
+            <label>興趣愛好（可多選）：</label><br>
+            <input type="checkbox" name="hobbies" value="reading"> 閱讀
+            <input type="checkbox" name="hobbies" value="sports"> 運動
+            <input type="checkbox" name="hobbies" value="music"> 音樂
+            <input type="checkbox" name="hobbies" value="travel"> 旅行
+            <input type="checkbox" name="hobbies" value="gaming"> 遊戲
+        </div>
+
+        <div class="form-group">
+            <label>付款方式：</label>
+            <input type="radio" name="payment" value="credit"> 信用卡
+            <input type="radio" name="payment" value="cash"> 現金
+            <input type="radio" name="payment" value="transfer"> 轉帳
+        </div>
+
+        <div class="form-group">
+            <label>訂閱通知：</label>
+            <input type="checkbox" name="subscribe" value="yes">
+            <small>我願意接收最新消息通知</small>
+        </div>
+
+        <button type="submit" class="btn">送出</button>
+        
+    </form>
+</body>
+</html>

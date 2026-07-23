@@ -1,0 +1,15 @@
+{
+  "version": "1.5",
+  "status": "FAIL",
+  "round": 2,
+  "checks": {
+    "adjacent_frame_gap_px": 2,
+    "connector_max_bends": 0,
+    "nested_frame_gap_px": null,
+    "visual": "FAIL"
+  },
+  "defects": [
+    "紅色與粉紅色說明框僅約 6 px 間距，低於樣板安全距離"
+  ],
+  "action": "regenerate_from_raw"
+}

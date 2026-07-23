@@ -1,0 +1,140 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
+<%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>JSTL + EL 整合練習</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", Arial; max-width: 800px; margin: 50px auto; padding: 20px; }
+        .section { background: #f9f9f9; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        h2 { color: #333; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+        .result { color: #27ae60; font-weight: bold; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+    </style>
+</head>
+<body>
+    <h1>JSTL + EL 整合練習</h1>
+    
+    <!-- 1. c:forEach 迭代 -->
+    <div class="section">
+        <h2>1. c:forEach 迭代</h2>
+        <c:set var="fruits" value="${['蘋果', '香蕉', '橘子', '葡萄', '西瓜']}" />
+        
+        <p>所有水果：</p>
+        <ul>
+            <c:forEach var="fruit" items="${fruits}" varStatus="status">
+                <li>${status.index + 1}. ${fruit}</li>
+            </c:forEach>
+        </ul>
+    </div>
+    
+    <!-- 2. c:if 條件判斷 -->
+    <div class="section">
+        <h2>2. c:if 條件判斷</h2>
+        <c:set var="login" value="true" />
+        <c:set var="isAdmin" value="true" />
+        
+        <c:if test="${login}">
+            <p style="color: green;">✓ 已登入</p>
+        </c:if>
+        
+        <c:if test="${isAdmin}">
+            <p style="color: blue;">✓ 您是管理員</p>
+        </c:if>
+    </div>
+    
+    <!-- 3. c:choose 多重條件 -->
+    <div class="section">
+        <h2>3. c:choose 多重條件</h2>
+        <c:set var="temperature" value="28" />
+        <p>目前溫度：${temperature}°C</p>
+        
+        <c:choose>
+            <c:when test="${temperature >= 35}">
+                <p style="color: red;">🔥 炎熱</p>
+            </c:when>
+            <c:when test="${temperature >= 25}">
+                <p style="color: orange;">☀️ 舒適</p>
+            </c:when>
+            <c:when test="${temperature >= 15}">
+                <p style="color: green;">🌤️ 涼爽</p>
+            </c:when>
+            <c:otherwise>
+                <p style="color: blue;">❄️ 寒冷</p>
+            </c:otherwise>
+        </c:choose>
+    </div>
+    
+    <!-- 4. fmt 數值格式化 -->
+    <div class="section">
+        <h2>4. fmt 數值格式化</h2>
+        <c:set var="price" value="1234567.89" />
+        
+        <p>原始值：${price}</p>
+        <p>貨幣格式：<fmt:formatNumber value="${price}" type="currency" currencyCode="TWD" /></p>
+        <p>千分位：<fmt:formatNumber value="${price}" pattern="#,###.##" /></p>
+        <p>百分比：<fmt:formatNumber value="0.856" type="percent" /></p>
+    </div>
+    
+    <!-- 5. fn 函數 -->
+    <div class="section">
+        <h2>5. fn 函數</h2>
+        <c:set var="text" value="Hello World Jakarta EE" />
+        
+        <p>原始字串：${text}</p>
+        <p>字串長度：${fn:length(text)}</p>
+        <p>轉大寫：${fn:toUpperCase(text)}</p>
+        <p>轉小寫：${fn:toLowerCase(text)}</p>
+        <p>包含 "World"：${fn:contains(text, 'World')}</p>
+        <p>取代字串：${fn:replace(text, 'World', 'EE')}</p>
+        <p>子字串：${fn:substring(text, 0, 5)}</p>
+    </div>
+    
+    <!-- 6. 表格顯示 -->
+    <div class="section">
+        <h2>6. 表格顯示</h2>
+        <jsp:useBean id="students" class="java.util.ArrayList" scope="page" />
+        
+        <% 
+            students.add(new String[]{"001", "張三", "90"});
+            students.add(new String[]{"002", "李四", "85"});
+            students.add(new String[]{"003", "王五", "92"});
+        %>
+        
+        <table>
+            <tr>
+                <th>學號</th>
+                <th>姓名</th>
+                <th>成績</th>
+            </tr>
+            <c:forEach var="student" items="${students}">
+                <tr>
+                    <td>${student[0]}</td>
+                    <td>${student[1]}</td>
+                    <td>
+                        <c:choose>
+                            <c:when test="${student[2] >= 90}">
+                                <span style="color: gold;">${student[2]} ★</span>
+                            </c:when>
+                            <c:when test="${student[2] >= 80}">
+                                <span style="color: green;">${student[2]}</span>
+                            </c:when>
+                            <c:otherwise>
+                                <span style="color: red;">${student[2]}</span>
+                            </c:otherwise>
+                        </c:choose>
+                    </td>
+                </tr>
+            </c:forEach>
+        </table>
+    </div>
+    
+    <br>
+    <a href="index.jsp">回首頁</a>
+</body>
+</html>

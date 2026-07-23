@@ -1,0 +1,11 @@
+{
+  "version": "1.4",
+  "status": "FAIL",
+  "round": 1,
+  "defects": [
+    "字元格起點誤判為 x=57，正確應為 x=66",
+    "EL 染色有漏白與染到相鄰字元",
+    "部分框線上下留白不對稱"
+  ],
+  "action": "discard_and_regenerate_from_raw"
+}

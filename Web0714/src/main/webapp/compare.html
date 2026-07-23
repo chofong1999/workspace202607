@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表單範例 - Checkbox & Radio</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 40px auto; }
+        .form-group { margin-bottom: 15px; }
+        label { display: inline-block; margin-right: 15px; }
+        .btn { background: #007bff; color: white; padding: 8px 20px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>數字比較</h2>
+    <form action="comresult.jsp" method="post">
+        
+		<div class="form-group">
+             <label for="favoriteAnimal">請輸入第一個數字：</label>
+             <input type="text" 
+                    id="num1" 
+                    name="num1" 
+                    value="1"
+                    placeholder="例如：20" />
+             <label for="favoriteAnimal">請輸入第二個數字：</label>
+             <input type="text" 
+                    id="num2" 
+                    name="num2" 
+                    value="2"
+                    placeholder="例如：20" />
+        </div>
+        <button type="submit" class="btn">送出</button>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "status": "DRAFT_PENDING_USER_CONFIRMATION",
+  "source": "mvweb0715/el-jstl__p01.png",
+  "output": "給使用者看的成果/01_JSP樣板待確認/樣板確認_01_JSP指令_CSS_JSTL_EL.png",
+  "revision": "r14",
+  "sop": "1.7",
+  "checked": ["PNG 可解析", "100% 全圖配置", "200% EL 細節", "黃色框完整包含第 4 行", "紫框未穿過第 10 行", "第 26 行完整包含至行尾", "第 42～44 行右界依最長行收斂", "第 45 行空白未框入", "相鄰框至少 2 px 間隙", "元件未超出畫布"],
+  "el_measurement": {
+    "method": "逐個 EL 直接量測實際左右像素界，不使用統一公式批量推算",
+    "regions": [
+      {"line": 26, "expression": "${['蘋果', '香蕉', '橘子', '葡萄', '西瓜']}", "left": 389, "right": 715},
+      {"line": 30, "expression": "${fruits}", "left": 449, "right": 537},
+      {"line": 31, "expression": "${status.index + 1}", "left": 249, "right": 432},
+      {"line": 31, "expression": "${fruit}", "left": 442, "right": 521},
+      {"line": 42, "expression": "${login}", "left": 249, "right": 327},
+      {"line": 46, "expression": "${isAdmin}", "left": 249, "right": 346}
+    ],
+    "per_expression_checks": ["$ 完整粉紅", "{ 完整粉紅", "} 完整粉紅", "左側相鄰字元未染", "右側相鄰字元未染"]
+  },
+  "box_measurements": [
+    {"language": "JSTL", "lines": "26", "longest_line": 26, "left": 145, "right": 760, "top": 575, "bottom": 596},
+    {"language": "JSTL", "lines": "30-32", "longest_line": 30, "left": 180, "right": 720, "top": 650, "bottom": 707},
+    {"language": "JSTL", "lines": "42-44", "longest_line": 43, "left": 145, "right": 526, "top": 878, "bottom": 936}
+  ],
+  "teaching_callout_checks": ["第 24-34 行以完整 HTML section 外框呈現", "第 37-38 行有 HTML 框與教學說明", "第 37-40 行 c:set 有對應說明", "粉紅說明只解釋 EL 實際資料用途", "說明框不含製圖或 QA 規則", "連接線未穿過程式碼或說明框"],
+  "self_review": ["修正綠線穿過藍色標籤", "HTML 說明改用同色短標籤", "第 37-38 與 39-40 行相鄰框保持間距", "連接線不穿程式碼、框或說明文字"],
+  "note": "r12-r13 在自檢中發現連線穿標籤、顏色對應與間距問題；r14 已修正。仍待使用者確認，不是正式批次 PASS。"
+}

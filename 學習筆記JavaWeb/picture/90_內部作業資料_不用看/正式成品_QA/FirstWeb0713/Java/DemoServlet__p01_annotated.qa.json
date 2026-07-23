@@ -1,0 +1,17 @@
+{
+  "sop": "1.5",
+  "status": "PASS",
+  "source": "C:/workspace202607/FirstWeb0713/src/main/java/DemoServlet.java",
+  "raw": "C:/workspace202607/JavaWeb學習筆記/picture/01_原始截圖/FirstWeb0713/Java/DemoServlet__p01.png",
+  "page": 1,
+  "visibleLines": [
+    1,
+    42
+  ],
+  "checks": {
+    "adjacentOverlap": false,
+    "maxConnectorBends": 0,
+    "elRegions": 0,
+    "callouts": 1
+  }
+}

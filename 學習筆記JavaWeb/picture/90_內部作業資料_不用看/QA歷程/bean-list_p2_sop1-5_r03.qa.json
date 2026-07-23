@@ -1,0 +1,13 @@
+{
+  "version": "1.5",
+  "status": "PASS",
+  "round": 3,
+  "checks": {
+    "adjacent_frame_gap_px": 2,
+    "connector_max_bends": 0,
+    "nested_frame_gap_px": 8,
+    "visual": "PASS",
+    "visual_200_percent": "PASS",
+    "note": "巢狀框右側內縮 8 px；所有引線水平直連"
+  }
+}

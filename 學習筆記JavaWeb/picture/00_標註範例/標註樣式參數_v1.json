@@ -1,0 +1,62 @@
+{
+  "version": "1.4",
+  "referenceImage": "標註風格範例_pageContext與Scope.png",
+  "colors": {
+    "html": "#3B82F6",
+    "css": "#A855F7",
+    "jspDirectiveOrComment": "#FACC15",
+    "jspAction": "#FF9800",
+    "javaScriptlet": "#FF334F",
+    "jstl": "#65C943",
+    "el": "#E56DA4",
+    "panelBackground": "#0D1117"
+  },
+  "geometry": {
+    "codeFramePaddingXInCharacters": 0.5,
+    "minimumTextClearancePx": 3,
+    "maximumVerticalPaddingDifferencePx": 2,
+    "frameVerticalPositionSource": "measured-glyph-bounds",
+    "manualYPlusHeightGuessingAllowed": false,
+    "minimumFrameToCalloutGapPx": 12,
+    "legendPaddingXpx": 18,
+    "legendPaddingYpx": 20,
+    "legendBottomClearancePx": 20
+  },
+  "el": {
+    "defaultStyle": "pink-text-with-group-bracket",
+    "filledBackground": false,
+    "translucentBackgroundSubstituteAllowed": false,
+    "recolorGlyphs": true,
+    "recolorSourcePixels": true,
+    "retypeOverlayAllowed": false,
+    "measureCharacterGridFromSourceImage": true,
+    "requireCompleteAntialiasPixelCoverage": true,
+    "allowNeighborCellRecolor": false,
+    "singleFocusOutlineAllowed": true,
+    "includeOnlyExpression": true
+  },
+  "qualityGate": {
+    "allowTextOverlap": false,
+    "allowFrameThroughText": false,
+    "allowCalloutFrameOverlap": false,
+    "allowConnectorThroughCode": false,
+    "allowClippedLabels": false,
+    "requireFullSizeReview": true,
+    "requireElReviewAt200Percent": true,
+    "requireQaRecord": true,
+    "passRequiresZeroKnownDefects": true
+  },
+  "reviewLoop": {
+    "maximumRoundsPerImage": 5,
+    "candidateNamePattern": "{filename}_sop1-4_r{round:02}.png",
+    "regenerateFromOriginalOnFailure": true,
+    "patchFailedCandidate": false,
+    "passStatus": "PASS",
+    "failStatus": "FAIL",
+    "limitStatus": "QA_LIMIT_REACHED",
+    "failedCandidateDirectory": "picture/02_標註成品/QA歷程",
+    "allowLimitReachedAsComplete": false,
+    "crossImageConsistencyReviewEvery": 5,
+    "repeatedSameDefectStopsBatchAtCount": 2
+  }
+}

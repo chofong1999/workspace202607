@@ -1,0 +1,14 @@
+{
+  "version": "1.4",
+  "status": "PASS",
+  "round": 1,
+  "source": "C:/workspace202607/JavaWeb學習筆記/picture/01_原始截圖/mvweb0715/userform__p01.png",
+  "checks": {
+    "source_is_raw": true,
+    "el_changed_pixels": 801,
+    "el_regions": 2,
+    "visual_100_percent": "PASS",
+    "visual_200_percent": "PASS",
+    "note": "框線、說明框、EL 染色與圖例人工檢查通過"
+  }
+}

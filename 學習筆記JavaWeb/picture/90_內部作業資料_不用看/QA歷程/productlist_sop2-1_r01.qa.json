@@ -1,0 +1,35 @@
+{
+  "file": "productlist_sop2-1_r01.png",
+  "source": "C:/Users/student/AppData/Local/Temp/codex-clipboard-a84ba8ed-4f7c-49b2-af6c-e92ee298f553.png",
+  "sop": "2.1",
+  "status": "PASS",
+  "checks": {
+    "source_text_preserved": true,
+    "el_count": 15,
+    "javascript_regions": 1,
+    "frames_cross_text": 0,
+    "connector_cross_text": 0,
+    "explanation_overlap": 0,
+    "legend_layout": "固定兩欄四列",
+    "legend_items": [
+      "HTML",
+      "CSS",
+      "JSP 指令／JSP 註解",
+      "JSTL",
+      "JSP Action",
+      "Java scriptlet",
+      "EL",
+      "JavaScript"
+    ],
+    "legend_missing_items": 0,
+    "legend_bottom_padding_px": 24,
+    "canvas_overflow": 0,
+    "visual_100_percent": "PASS",
+    "visual_200_percent": "PASS"
+  },
+  "notes": [
+    "未依本圖內容省略任何固定圖例項目",
+    "圖例左右欄順序與2.1規範一致",
+    "由原始截圖重新合成"
+  ]
+}

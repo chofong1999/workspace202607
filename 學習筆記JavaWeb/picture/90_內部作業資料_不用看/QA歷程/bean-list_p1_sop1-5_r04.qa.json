@@ -1,0 +1,13 @@
+{
+  "version": "1.5",
+  "status": "PASS",
+  "round": 4,
+  "checks": {
+    "adjacent_frame_gap_px": 2,
+    "connector_max_bends": 0,
+    "jsp_comment_to_action_gap_px": 20,
+    "visual": "PASS",
+    "visual_200_percent": "PASS",
+    "note": "黃色標籤移出橘框；所有引線為水平或單一直線斜連"
+  }
+}

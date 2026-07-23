@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product Form</title>
+
+<style>
+.product-form {
+    display: grid;
+    grid-template-columns: max-content;
+    gap: 10px 8px;
+}
+.product-form input {
+	width:15%;
+    grid-column: 2;
+    justify-self: start;
+}
+.product-form button {
+    grid-column: 2;
+    justify-self: start;
+}
+</style>
+</head>
+
+<body>
+
+<form action="product.jsp" method="post" class="product-form">
+    Product ID:<input name="product_id" value="AL01">
+    Product Name:<input name="product_name" value="Asus Laptop">
+    Price:<input name="price" value="90000">
+    Place:<input name="place" value="LA">
+    <button>提交</button>
+</form>
+
+</body>
+</html>

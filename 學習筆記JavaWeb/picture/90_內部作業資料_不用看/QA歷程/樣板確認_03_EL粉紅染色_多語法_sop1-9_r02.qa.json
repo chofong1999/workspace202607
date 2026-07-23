@@ -1,0 +1,94 @@
+{
+  "status": "FAIL_VISUAL_LAYOUT",
+  "sop": "1.9-user-requested-recolor-exception",
+  "source": "C:\\workspace202607\\JavaWeb學習筆記\\picture\\01_原始截圖\\mvweb0715\\el-bean__p03.png",
+  "crop": [
+    0,
+    325,
+    1872,
+    690
+  ],
+  "output": "C:\\workspace202607\\JavaWeb學習筆記\\picture\\90_內部作業資料_不用看\\QA歷程\\樣板確認_03_EL粉紅染色_多語法_sop1-9_r02.png",
+  "el_expression_count": 7,
+  "el_expressions": [
+    {
+      "line": 83,
+      "text": "${colors[0]}",
+      "box": [
+        417,
+        141,
+        524,
+        157
+      ]
+    },
+    {
+      "line": 84,
+      "text": "${colors[1]}",
+      "box": [
+        417,
+        160,
+        524,
+        176
+      ]
+    },
+    {
+      "line": 85,
+      "text": "${colors[2]}",
+      "box": [
+        417,
+        179,
+        524,
+        195
+      ]
+    },
+    {
+      "line": 86,
+      "text": "${colors.size()}",
+      "box": [
+        399,
+        198,
+        542,
+        214
+      ]
+    },
+    {
+      "line": 89,
+      "text": "${colors}",
+      "box": [
+        453,
+        255,
+        533,
+        271
+      ]
+    },
+    {
+      "line": 90,
+      "text": "${status.index + 1}",
+      "box": [
+        255,
+        274,
+        425,
+        290
+      ]
+    },
+    {
+      "line": 90,
+      "text": "${color}",
+      "box": [
+        444,
+        274,
+        515,
+        290
+      ]
+    }
+  ],
+  "recolored_glyph_pixels": 3282,
+  "unchanged_el_glyph_pixels": 0,
+  "changed_non_el_original_glyph_pixels": 0,
+  "notes": [
+    "Produced directly from the raw screenshot, not from a prior annotated image.",
+    "EL hue changed only on original glyph pixels; no text was retyped.",
+    "Pending user visual confirmation before documenting as SOP technique.",
+    "User found the pink group connector visibly skewed. The callout was vertically misaligned and the diagonal connector violated the horizontal-first layout rule. Superseded by r03."
+  ]
+}

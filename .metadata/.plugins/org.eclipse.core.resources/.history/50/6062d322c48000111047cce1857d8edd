@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product Form</title>
+
+<style>
+.product-form {
+    display: grid;
+    /* 第一欄自動配合最長標題，第二欄是輸入框 */
+    grid-template-columns: max-content 180px;
+    gap: 10px 8px;
+    align-items: center;
+    width: max-content;
+}
+.product-form input {
+    width: 100%;
+    box-sizing: border-box;
+}
+.product-form button {
+    grid-column: 2;
+    justify-self: start;
+}
+</style>
+</head>
+
+<body>
+
+<form action="product.jsp" method="post" class="product-form">
+
+    Product ID:<br>
+    <input type="text" name="product_id" value="AL01">
+    Product Name:<br>
+    <input type="text" name="product_name" value="Asus Laptop">
+    Price:<br>
+    <input type="text" name="price" value="90000">
+    Place:<br>
+    <input type="text" name="place" value="LA">
+    <button type="submit">提交</button>
+</form>
+
+</body>
+</html>

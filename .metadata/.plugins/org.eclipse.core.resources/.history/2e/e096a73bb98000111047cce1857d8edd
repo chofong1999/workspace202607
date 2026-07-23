@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="product.jsp" method="post">
+<p>ProductID:   <input type="text" name="product_id" value="AL01"></input></p>
+<p>Product Name:<input type="text" name="product_name" value="Asus Laptop"></input></p>
+<p>Price:       <input type="text" name="price" value="90000"></input></p>
+<input type="submit">
+</form>
+
+
+</body>
+</html>

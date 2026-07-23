@@ -1,0 +1,126 @@
+package dao.Impl;
+
+import java.math.BigDecimal;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import dao.ProductDao;
+import model.Product;
+import util.DbConnection;
+
+public class ProductDaoImpl implements ProductDao {
+
+	@Override
+	public void insert(Product product) {
+		String sql = "INSERT INTO products (name, price, stock, category) VALUES (?, ?, ?, ?)";
+		try (Connection conn = DbConnection.getConnection();
+		     PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+		    ps.setString(1, product.getName());
+		    ps.setDouble(2, Double.parseDouble(product.getPrice().toString()));
+		    ps.setInt(3, product.getStock());
+		    ps.setString(4, product.getCategory());
+		    ps.executeUpdate();
+		    try (ResultSet rs = ps.getGeneratedKeys()) {
+		        if (rs.next()) {
+		            product.setId(rs.getInt(1));   // 將自增 ID 回寫到物件
+		        }
+		    }
+		} catch (SQLException e) {
+			System.out.println("Insert Product Error"+e.getMessage());
+			e.printStackTrace();
+		}
+		
+	}
+
+	@Override
+	public Optional<Product> findById(int id) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+	}
+
+	@Override
+	public List<Product> findAll() {
+		String sql="select * from mydb.products where deleted='0'";
+		try(Connection conn = DbConnection.getConnection();) {
+
+	    	Statement st=conn.createStatement();
+	    	ResultSet rs=st.executeQuery(sql);
+	    	List<Product> all=new ArrayList();
+	    	while(rs.next())
+	    	{
+	    		all.add(mapRow(rs));
+	    	}
+			System.out.println("Find All Product"+all.toString());
+	    	return all;
+		} catch (SQLException e) {
+			System.out.println("Find All Error"+e.getMessage());
+		}
+		return new ArrayList();
+	}
+
+	@Override
+	public List<Product> searchByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> findByCategory(String category) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(Product product) {
+		String sql = "update products set name=?, price=?, stock=?, category=? where id=? and deleted=0";
+		try (Connection conn = DbConnection.getConnection();
+		     PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+		    ps.setString(1, product.getName());
+		    ps.setDouble(2, Double.parseDouble(product.getPrice().toString()));
+		    ps.setInt(3, product.getStock());
+		    ps.setString(4, product.getCategory());
+		    ps.setInt(5, product.getId());
+		    ps.executeUpdate();
+		    System.out.println("Updated Product :"+product);
+		} catch (SQLException e) {
+			System.out.println("Update Error\n"+e.getMessage());
+		}
+		
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public long count() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+    private Product mapRow(ResultSet rs)
+    {
+    	Product product=new Product();
+    	try {
+			product.setId(rs.getInt("id"));
+			product.setName(rs.getString("name"));
+			product.setPrice(new BigDecimal(rs.getDouble("price")));
+			product.setStock(rs.getInt("stock"));
+			product.setCategory(rs.getString("category"));
+//			product.setDeleted(rs.getInt("deleted"));
+			return product;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+    	
+    	return null;
+    }
+}

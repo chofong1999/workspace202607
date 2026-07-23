@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@page import="model.Product" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:useBean class="model.Product" id="my_product">
+	<jsp:setProperty name="my_product" property="*"></jsp:setProperty>
+</jsp:useBean>
+${my_product.product_id }
+</body>
+</html>

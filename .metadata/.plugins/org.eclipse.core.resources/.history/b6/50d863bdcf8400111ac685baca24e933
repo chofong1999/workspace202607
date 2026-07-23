@@ -1,0 +1,59 @@
+package dao.Impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import dao.ProductDao;
+import model.Product;
+
+public class ProductDaoImpl implements ProductDao {
+
+	@Override
+	public void insert(Product product) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Optional<Product> findById(int id) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+	}
+
+	@Override
+	public List<Product> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> searchByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> findByCategory(String category) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(Product product) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public long count() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

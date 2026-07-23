@@ -1,0 +1,15 @@
+{
+  "version": "1.5",
+  "status": "FAIL",
+  "round": 3,
+  "checks": {
+    "adjacent_frame_gap_px": 2,
+    "connector_max_bends": 0,
+    "nested_frame_gap_px": null,
+    "visual": "FAIL"
+  },
+  "defects": [
+    "黃色 JSP 註解說明框侵入橘色第 24 行外框的垂直範圍"
+  ],
+  "action": "regenerate_from_raw"
+}

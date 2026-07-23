@@ -1,0 +1,27 @@
+{
+  "file": "productlist_sop2-0_r02.png",
+  "source": "C:/Users/student/AppData/Local/Temp/codex-clipboard-a84ba8ed-4f7c-49b2-af6c-e92ee298f553.png",
+  "sop": "2.0",
+  "status": "PASS",
+  "checks": {
+    "source_text_preserved": true,
+    "el_method": "原字保留，2px 粉紅下劃線，端點向下3px",
+    "el_count": 15,
+    "javascript_regions": 1,
+    "javascript_region": "第74行 return confirm(...)",
+    "javascript_distinguished_from_java_scriptlet": true,
+    "frames_cross_text": 0,
+    "explanation_overlap": 0,
+    "canvas_overflow": 0,
+    "visual_100_percent": "PASS",
+    "visual_200_percent": "PASS",
+    "connector_cross_text": 0,
+    "legend_complete": true
+  },
+  "notes": [
+    "onclick 是 HTML attribute；引號內 return confirm(...) 是 JavaScript",
+    "新增青色 JavaScript 圖例與獨立教學說明",
+    "由原始截圖重新合成，不在舊成品上修補",
+    "JavaScript 說明以行號直接對應，取消會穿越文字的連接線"
+  ]
+}

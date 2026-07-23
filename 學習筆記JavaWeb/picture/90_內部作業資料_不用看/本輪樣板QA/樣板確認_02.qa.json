@@ -1,0 +1,10 @@
+{
+  "status": "DRAFT_PENDING_USER_CONFIRMATION",
+  "revision": "r06",
+  "sop": "1.7",
+  "source": "mvweb0715/el-jstl__p03.png",
+  "output": "給使用者看的成果/01_JSP樣板待確認/樣板確認_02_JSPAction_Java_巢狀JSTL_EL.png",
+  "checked": ["PNG 可解析", "100% 全圖配置", "400% EL 左右界", "第 94-96 行可見程式已標示", "HTML 外層 section 與 table 為完整結構框", "JSP Action、Java scriptlet、JSTL、EL 皆有學習者說明", "元件未超出畫布"],
+  "self_review": ["橘色 JSP Action 框完整包含行尾", "紅色 Java 框依最長行收斂", "JSTL 綠框右界收斂", "JSTL 底框不穿第 134 行 table 結束標籤", "外層藍框與綠框保持巢狀間距", "說明框及連線無重疊"],
+  "note": "r04-r05 在自檢中發現框線過寬、行尾餘量與第 134 行間距問題；r06 已修正。仍待使用者確認，不是正式批次 PASS。"
+}

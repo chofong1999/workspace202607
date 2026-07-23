@@ -1,0 +1,37 @@
+{
+  "sourceImage": "",
+  "candidateImage": "",
+  "sopVersion": "1.4",
+  "round": 1,
+  "status": "FAIL",
+  "automaticChecks": {
+    "unrecoloredElPixels": null,
+    "recoloredNeighborPixels": null,
+    "calloutFrameOverlapAreaPx": null,
+    "minimumCalloutFrameGapPx": null,
+    "frameGlyphIntersectionPixels": null,
+    "maximumVerticalPaddingDifferencePx": null,
+    "outOfCanvasElements": null
+  },
+  "visualChecks": {
+    "fullImageAt100Percent": false,
+    "elAndFramesAt200Percent": false,
+    "tightCodeBounds": false,
+    "completeLongestLines": false,
+    "balancedSingleLineFrames": false,
+    "elMatchesReferenceStyle": false,
+    "noTextOrFrameOverlap": false,
+    "noConnectorThroughCode": false,
+    "legendPaddingAndOrderCorrect": false,
+    "consistentWithOtherPassedImages": false
+  },
+  "defects": [
+    {
+      "location": "",
+      "problem": "",
+      "rootCause": "",
+      "plannedFix": ""
+    }
+  ],
+  "nextAction": "GENERATE_NEXT_ROUND"
+}

@@ -1,0 +1,19 @@
+{
+  "version": "1.4",
+  "status": "PASS",
+  "round": 2,
+  "source": "C:/workspace202607/JavaWeb學習筆記/picture/01_原始截圖/mvweb0716/bean-list__p02.png",
+  "previous_round": "FAIL",
+  "checks": {
+    "source_is_raw": true,
+    "grid_origin_x": 66,
+    "character_width": 9,
+    "line_height": 19,
+    "el_changed_pixels": 9282,
+    "el_regions": 14,
+    "pink_callout_blue_gap": 66,
+    "visual_100_percent": "PASS",
+    "visual_200_percent": "PASS",
+    "note": "r01 因字元格起點錯誤失敗；r02 逐像素確認雙引號未染色且右大括號完整染色"
+  }
+}

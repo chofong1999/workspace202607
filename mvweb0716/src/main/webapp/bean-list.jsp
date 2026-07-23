@@ -1,0 +1,79 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaBean 與 List</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", Arial; max-width: 900px; margin: 50px auto; padding: 20px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .in-stock { color: green; }
+        .low-stock { color: orange; }
+        .out-of-stock { color: red; }
+    </style>
+</head>
+<body>
+    <h1>JavaBean 與 List</h1>
+    
+    <%-- 建立產品列表 --%>
+    <jsp:useBean id="products" class="java.util.ArrayList" scope="request" />    
+    <%
+        products.add(new model.ProductBean(1, "筆記型電腦", 35000, 10));
+        products.add(new model.ProductBean(2, "無線滑鼠", 599, 3));
+        products.add(new model.ProductBean(3, "機械鍵盤", 1200, 0));
+        products.add(new model.ProductBean(4, "螢幕", 8500, 5));
+        products.add(new model.ProductBean(5, "USB 隨身碟", 299, 20));
+    %>
+    
+    <%-- 產品表格 --%>
+    <table>
+        <tr>
+            <th>編號</th>
+            <th>產品名稱</th>
+            <th>價格</th>
+            <th>庫存</th>
+            <th>狀態</th>
+        </tr>
+        <c:forEach var="product" items="${products}">
+            <tr>
+                <td>${product.id}</td>
+                <td>${product.name}</td>
+                <td>$<fmt:formatNumber value="${product.price}" pattern="#,###" /></td>
+                <td>${product.stock}</td>
+                <td>
+                    <c:choose>
+                        <c:when test="${product.stock == 0}">
+                            <span class="out-of-stock">${product.stockStatus}</span>
+                        </c:when>
+                        <c:when test="${product.stock <= 5}">
+                            <span class="low-stock">${product.stockStatus}</span>
+                        </c:when>
+                        <c:otherwise>
+                            <span class="in-stock">${product.stockStatus}</span>
+                        </c:otherwise>
+                    </c:choose>
+                </td>
+            </tr>
+        </c:forEach>
+    </table>
+    
+    <%-- 統計資訊 --%>
+    <div style="background: #f9f9f9; padding: 15px; border-radius: 5px;">
+        <h3>統計資訊</h3>
+        <p>產品數量：${products.size()}</p>
+        <c:set var="totalStock" value="0" />
+        <c:forEach var="product" items="${products}">
+            <c:set var="totalStock" value="${totalStock + product.stock}" />
+        </c:forEach>
+        <p>總庫存：${totalStock}</p>
+    </div>
+    
+    <br>
+    <a href="index.jsp">回首頁</a>
+</body>
+</html>

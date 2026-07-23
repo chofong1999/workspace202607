@@ -1,0 +1,120 @@
+
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.math.BigDecimal;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.*;
+
+import dao.ProductDao;
+import dao.Impl.ProductDaoImpl;
+import model.*;
+/**
+ * Servlet implementation class ProductController
+ */
+@WebServlet("/products/*")
+public class ProductController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	private ProductDao productDao = new ProductDaoImpl();   
+    
+	/**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ProductController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String path = request.getPathInfo();  // 取得 /product 之後的路徑，如 /list, /edit
+		//response.getWriter().append("Served at: ").append(path);
+		switch(path) {
+		case "/list":
+//			List<Product> data= listProduct(request,response);
+//			response.getWriter().append(data.toString()).append("\nend");
+			List<Product> data= listProduct(request,response);
+			//response.getWriter().append(data.toString());
+			request.setAttribute("products", data);
+			request.getRequestDispatcher("../productlist.jsp").forward(request, response);
+			break;
+		case "/delete":
+			deleteProduct(request,response);
+			break;
+		default:
+			response.getWriter().append("Invalid Path : ").append(path);
+		}
+	}
+    private void addProduct(HttpServletRequest request, HttpServletResponse response) {
+		String name=request.getParameter("name");
+		String price=request.getParameter("price");
+		String stock=request.getParameter("stock");
+		String category=request.getParameter("category");
+		Product p=new Product(name,new BigDecimal(price),Integer.parseInt(stock),category);
+		productDao.insert(p);
+		try {
+		  response.getWriter().append("insert completed");
+		}catch(Exception ex) {}
+    }
+    
+    private void deleteProduct(HttpServletRequest request, HttpServletResponse response) {
+    	String id=request.getParameter("id");
+		productDao.delete(Integer.parseInt(id));
+		try {
+		  response.getWriter().append("delete completed");
+		}catch(Exception ex) {}
+    }
+    
+    private List<Product> listProduct(HttpServletRequest request, HttpServletResponse response) {
+    	List<Product> list= productDao.findAll();
+    	return list;
+    }
+    
+    private void updateProduct(HttpServletRequest request, HttpServletResponse response) {
+    	String id=request.getParameter("id");
+    	String name=request.getParameter("name");
+		String price=request.getParameter("price");
+		String stock=request.getParameter("stock");
+		String category=request.getParameter("category");
+		Product p=new Product(name,new BigDecimal(price),Integer.parseInt(stock),category);
+		p.setId(Integer.parseInt(id));
+		productDao.update(p);
+		List<Product> data=productDao.findAll();
+		try {
+			  response.getWriter().append(data.toString());
+			}catch(Exception ex) {}
+    }
+    
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String path = request.getPathInfo();  // 取得 /product 之後的路徑，如 /list, /edit
+		//response.getWriter().append("Served at: ").append(path);
+		switch(path) {
+		case "/add":
+//			addProduct(request,response);
+			addProduct(request,response);
+			List<Product> data= listProduct(request,response);			
+			request.setAttribute("products", data);			
+			request.getRequestDispatcher("../productlist.jsp").forward(request, response);
+			break;
+		case "/update":
+			updateProduct(request,response);
+			break;
+		default:
+			response.getWriter().append("Invalid Path : ").append(path);
+		}
+	}
+
+}

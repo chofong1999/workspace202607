@@ -1,0 +1,50 @@
+{
+  "file": "productlist_sop1-9_r02.png",
+  "source": "C:/Users/student/AppData/Local/Temp/codex-clipboard-a84ba8ed-4f7c-49b2-af6c-e92ee298f553.png",
+  "sop": "1.9",
+  "status": "PASS",
+  "checks": {
+    "source_text_preserved": true,
+    "el_method": "原字保留，2px 粉紅下劃線，端點向下3px",
+    "el_count": 15,
+    "el_bounds_individually_derived_from_source": true,
+    "frames_cross_text": 0,
+    "frame_overlap": {
+      "yellow_green": 0,
+      "green_blue": 0
+    },
+    "explanation_overlap": 0,
+    "canvas_overflow": 0,
+    "visual_100_percent": "PASS",
+    "visual_200_percent": "PASS"
+  },
+  "frames": [
+    {
+      "type": "HTML",
+      "lines": "32-37",
+      "longest_line": 32,
+      "right": 1090
+    },
+    {
+      "type": "JSP comment",
+      "lines": "38",
+      "longest_line": 38,
+      "right": 264
+    },
+    {
+      "type": "JSTL visible structure",
+      "lines": "39-78 visible",
+      "right": 1095
+    },
+    {
+      "type": "HTML table visible structure",
+      "lines": "41-78 visible",
+      "right": 1089
+    }
+  ],
+  "notes": [
+    "原始 Eclipse 檔案標籤保留在畫面頂端",
+    "畫面截到第78行，外框明確只涵蓋本張可見範圍",
+    "說明文字只解釋程式語意"
+  ]
+}
