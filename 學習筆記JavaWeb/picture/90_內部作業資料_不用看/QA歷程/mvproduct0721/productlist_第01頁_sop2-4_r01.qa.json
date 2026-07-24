@@ -1,0 +1,8 @@
+{
+  "image": "productlist_第01頁_sop2-4_r01.png",
+  "status": "FAIL",
+  "round": "r01",
+  "reason": "CSS/HTML 巢狀框範圍與垂直邊界需依實際字形修正；未交付使用者",
+  "elScheme": "粉紅字形",
+  "outsideELChangedPixels": 0
+}

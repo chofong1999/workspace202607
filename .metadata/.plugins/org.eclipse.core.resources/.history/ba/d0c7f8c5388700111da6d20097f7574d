@@ -1,0 +1,114 @@
+package controller;
+
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.DefaultValue;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.QueryParam;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import model.Employee;
+
+
+
+/**
+ * Employee REST Controller
+ *
+ * 類別層級標注說明：
+ *   @Path("/employees")  → 此類別處理所有 /api/employees 開頭的請求
+ *   @Produces(JSON)      → 類別內所有方法預設回應 application/json
+ *   @Consumes(JSON)      → 類別內所有方法預設接受 application/json 請求體
+ *   （方法層級的標注可覆寫類別層級的設定）
+ */
+@Produces(MediaType.APPLICATION_JSON)    // 預設回應 JSON
+@Consumes(MediaType.APPLICATION_JSON)   // 預設接受 JSON
+@Path("/employees")
+public class EmployeeController {
+    
+
+    
+	 private static final Map<Integer, Employee> DB = new HashMap<>();
+	    private static int nextId = 1;  // 模擬自動遞增 ID
+	    // static 區塊：類別載入時執行一次，填入測試資料
+	    static {
+	        DB.put(1, new Employee(nextId++, "Alice Chen",  "Engineering", 85000,"alice@demo.com",true));
+	        DB.put(2, new Employee(nextId++, "Bob Wang",    "Marketing",   72000,"bob@demo.com",false));
+	        DB.put(3, new Employee(nextId++, "Carol Liu",   "Engineering", 90000,"carol@demo.com",true));
+	    }
+	
+	@GET
+//	@Produces(MediaType.APPLICATION_JSON)
+	public Employee create() {
+    	    Employee e1=new Employee();
+    	    e1.setId(1);
+    	    e1.setName("Amy");
+    	    e1.setDepartment("Personnel");
+    	    e1.setSalary(30000.0);
+    	    e1.setEmail("abc@abc");
+    	    e1.setActive(true);
+    	    return e1;
+    }
+	@GET
+	@Path("/all")
+	public Response getAllEmployees() {
+	       List<Employee> employees = new ArrayList<>(DB.values());
+	       return Response.ok(employees).build();  // Response.ok() 自動設定狀態碼 200
+	}
+	 /**
+     * 依 ID 取得員工
+     * GET /api/employees/{id}
+     *
+     * @PathParam("id") 將 URI 中 {id} 的值注入為方法參數
+     * 回傳：找到 → 200 + Employee JSON；找不到 → 404 + 錯誤訊息
+     */
+    @GET
+    @Path("/{id}")
+    public Response getEmployeeById(@PathParam("id") int id) {
+        Employee emp = DB.get(id);
+        if (emp == null) {
+            // 404 Not Found：資源不存在時的標準回應
+            return Response.status(Response.Status.NOT_FOUND)
+                           .entity("{\"message\":\"Employee not found: " + id + "\"}")
+                           .build();
+        }
+        return Response.ok(emp).build();
+    }
+    @GET
+    @Path("/search")
+    public Response searchDepartment(@DefaultValue("NA") @QueryParam("department")String department) {
+    	   if(department.equals("NA"))
+    		   return Response.status(Response.Status.BAD_REQUEST)
+                       .entity("{\"message\":\"department 參數為必填\"}")
+                       .build();
+    	   List<Employee> data=new ArrayList<Employee>(DB.values());
+    	   List<Employee> found=data.stream().filter(d->d.getDepartment().equalsIgnoreCase(department)).toList();
+    	   if(found!=null && found.size()>0)
+    	      return Response.ok(found).build();
+    	   else
+    		  return Response.noContent().build(); 
+    }
+    
+    @POST
+    public Response createEmployee(Employee employee) {
+    	// 201 Created + Location Header（POST 成功建立資源時使用）
+    	// Location Header 告訴客戶端新資源的 URI 在哪裡
+    	if(employee.getName()==null || employee.getName()=="") {
+    		return Response.status(Response.Status.BAD_REQUEST)
+    				.entity("{\"message\":\"Employee Name must have Value\"}").build();
+    	}
+    	employee.setId(nextId++);
+    	DB.put(employee.getId(), employee);
+    	return Response.created(URI.create("employees/" + employee.getId()))
+    	        .entity(employee)       // 選擇性：把新建的資源也一起回傳
+    	        .build();
+    }
+}

@@ -17,6 +17,9 @@
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1784612396299_8" label="mvproduct0721" name="mvproduct0721">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mvproduct0721" type="4"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1784856200228_9" label="mvrest0724" name="mvrest0724">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mvrest0724" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1783906494039_2" label="Window Working Set" name="Aggregate for window 1783906494039"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1783923204377_3" label="Window Working Set" name="Aggregate for window 1783923204376"/>
 </workingSetManager>

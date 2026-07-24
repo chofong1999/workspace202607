@@ -1,0 +1,77 @@
+{
+  "qaVersion": 1,
+  "image": "index_第01頁_sop2-4_layout04_r01.png",
+  "source": "index__p01.png",
+  "project": "mvproduct0721",
+  "status": "PASS",
+  "sop": "2.4",
+  "visualSpecVersion": "4",
+  "layoutMethod": {
+    "name": "同色編號＋完整框／明確括號",
+    "badgesPerCategoryMaximum": 1,
+    "sameCategoryDuplicateBadges": 0,
+    "badgeOverlapPairs": 0,
+    "markerCollisionPairs": 0,
+    "incompleteOpenFrames": 0,
+    "bracketFallbacks": 1,
+    "longCrossPageConnectors": 0,
+    "connectorCrossings": 0
+  },
+  "automated": {
+    "sourceGlyphOverwrittenPixels": 0,
+    "sourceGlyphOverwrittenOutsideEL": 0,
+    "connectorCrossings": 0,
+    "allComponentsInsideCanvas": true,
+    "legendItems": 8,
+    "frameBorderOverlapPairs": 0,
+    "frameBorderTooClosePairs": 0,
+    "frameCrossingPairs": 0,
+    "badgeOverlapPairs": 0,
+    "markerCollisionPairs": 0,
+    "sameCategoryDuplicateBadges": 0,
+    "duplicatePagePairs": 0,
+    "frameGlyphHits": 0
+  },
+  "visual": {
+    "100%": "PASS — 編號互不重疊；每類每頁最多一個編號；無不完整矩形",
+    "200%": "PASS — 完整框與明確括號均未碰字、碰框或彼此交叉",
+    "400%": "N/A — 本頁無 EL"
+  },
+  "notes": [
+    "scriptlet 與外層 HTML 字元間空間不足，不使用細框；以紅色 [6] 編號定位第3行。",
+    "layout04：移除重複編號與不完整矩形；空間不足處改用明確右括號。"
+  ],
+  "round": "layout04_r01",
+  "markerEvidence": [
+    {
+      "language": "html",
+      "lines": [
+        1,
+        5
+      ],
+      "marker": "frame",
+      "badge": true,
+      "geometry": [
+        63,
+        96,
+        520,
+        99
+      ]
+    },
+    {
+      "language": "scriptlet",
+      "lines": [
+        3,
+        3
+      ],
+      "marker": "bracket",
+      "badge": true,
+      "geometry": [
+        588,
+        137,
+        12,
+        17
+      ]
+    }
+  ]
+}

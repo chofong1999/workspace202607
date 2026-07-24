@@ -1,0 +1,23 @@
+package controller;
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+import model.Employee;
+@Path("/employees")
+public class EmployeeController {
+    
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public Employee create() {
+    	    Employee e1=new Employee();
+    	    e1.setId(1);
+    	    e1.setName("Amy");
+    	    e1.setDepartment("Personnel");
+    	    e1.setSalary(30000.0);
+    	    e1.setEmail("abc@abc");
+    	    e1.setActive(true);
+    	    return e1;
+    }
+}

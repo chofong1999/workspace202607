@@ -1,0 +1,61 @@
+package controller;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import model.Employee;
+
+
+
+/**
+ * Employee REST Controller
+ *
+ * 類別層級標注說明：
+ *   @Path("/employees")  → 此類別處理所有 /api/employees 開頭的請求
+ *   @Produces(JSON)      → 類別內所有方法預設回應 application/json
+ *   @Consumes(JSON)      → 類別內所有方法預設接受 application/json 請求體
+ *   （方法層級的標注可覆寫類別層級的設定）
+ */
+@Produces(MediaType.APPLICATION_JSON)    // 預設回應 JSON
+@Consumes(MediaType.APPLICATION_JSON)   // 預設接受 JSON
+@Path("/employees")
+public class EmployeeController {
+    
+
+    
+	 private static final Map<Integer, Employee> DB = new HashMap<>();
+	    private static int nextId = 1;  // 模擬自動遞增 ID
+	    // static 區塊：類別載入時執行一次，填入測試資料
+	    static {
+	        DB.put(1, new Employee(nextId++, "Alice Chen",  "Engineering", 85000,"alice@demo.com",true));
+	        DB.put(2, new Employee(nextId++, "Bob Wang",    "Marketing",   72000,"bob@demo.com",false));
+	        DB.put(3, new Employee(nextId++, "Carol Liu",   "Engineering", 90000,"carol@demo.com",true));
+	    }
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public Employee create() {
+    	    Employee e1=new Employee();
+    	    e1.setId(1);
+    	    e1.setName("Amy");
+    	    e1.setDepartment("Personnel");
+    	    e1.setSalary(30000.0);
+    	    e1.setEmail("abc@abc");
+    	    e1.setActive(true);
+    	    return e1;
+    }
+	@GET
+	@Path("/all")
+	public Response getAllEmployees() {
+	       List<Employee> employees = new ArrayList<>(DB.values());
+	       return Response.ok(employees).build();  // Response.ok() 自動設定狀態碼 200
+	}
+}

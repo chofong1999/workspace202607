@@ -53,7 +53,7 @@ public class ProductController extends HttpServlet {
 			break;
 		case "/delete":
 			deleteProduct(request,response);
-			response.sendRedirect("/products/list");
+			response.sendRedirect("/mvproduct0721/products/list");
 			break;
 		case "/add":
 			request.getRequestDispatcher("/productform.jsp").forward(request, response);

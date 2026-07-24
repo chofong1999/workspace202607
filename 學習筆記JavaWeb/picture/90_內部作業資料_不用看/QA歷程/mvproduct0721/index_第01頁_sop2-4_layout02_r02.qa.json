@@ -1,0 +1,30 @@
+{
+  "qaVersion": 1,
+  "image": "index_第01頁_sop2-4_layout02_r02.png",
+  "source": "index__p01.png",
+  "project": "mvproduct0721",
+  "status": "PASS",
+  "sop": "2.4",
+  "visualSpecVersion": "2",
+  "layoutMethod": {
+    "name": "同色編號標記",
+    "longCrossPageConnectors": 0,
+    "connectorCrossings": 0,
+    "shortConnectors": 0
+  },
+  "automated": {
+    "sourceGlyphOverwrittenPixels": 0,
+    "sourceGlyphOverwrittenOutsideEL": 0,
+    "connectorCrossings": 0,
+    "allComponentsInsideCanvas": true,
+    "legendItems": 8
+  },
+  "visual": {
+    "100%": "PASS — 說明對應清楚且無交錯引線",
+    "200%": "PASS — HTML 框與 scriptlet 編號定位均未碰字",
+    "400%": "N/A — 本頁無 EL"
+  },
+  "notes": [
+    "scriptlet 與外層 HTML 字元間空間不足，不使用細框；以紅色 [6] 編號定位第3行。"
+  ]
+}

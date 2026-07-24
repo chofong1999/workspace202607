@@ -1,0 +1,477 @@
+{
+  "qaVersion": 1,
+  "image": "productedit_第01頁_sop2-4_r02.png",
+  "source": "productedit__p01.png",
+  "project": "mvproduct0721",
+  "status": "PASS",
+  "sop": "2.4",
+  "round": "r02",
+  "elScheme": {
+    "id": "CAND-EL-001",
+    "name": "粉紅字形",
+    "formalSelection": false
+  },
+  "pageGeometry": {
+    "mode": "NORMAL",
+    "anchorLine": 1,
+    "anchorGlyphTop": 102
+  },
+  "independentBoundaryEvidence": {
+    "method": "tesseract.js character-box OCR on each original screenshot line; source expression count and OCR ${...} sequence cross-checked; no fixed-width formula",
+    "expressionCount": 7,
+    "allDollarAndCloseBracePixelsRecolored": true,
+    "allLeftAndRightNeighborPixelsUnchanged": true,
+    "expressions": [
+      {
+        "line": 9,
+        "expression": "${not empty product}",
+        "ocrSequence": "${notemptyproduct}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          301,
+          252,
+          308,
+          268
+        ],
+        "closeBraceBox": [
+          473,
+          252,
+          479,
+          268
+        ],
+        "expressionBox": [
+          301,
+          252,
+          479,
+          268
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 29,
+        "expression": "${not empty product}",
+        "ocrSequence": "${notemptyproduct}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          265,
+          632,
+          272,
+          648
+        ],
+        "closeBraceBox": [
+          437,
+          632,
+          443,
+          648
+        ],
+        "expressionBox": [
+          265,
+          632,
+          443,
+          648
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 35,
+        "expression": "${not empty error}",
+        "ocrSequence": "${notemptyerror}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          175,
+          746,
+          182,
+          762
+        ],
+        "closeBraceBox": [
+          329,
+          746,
+          335,
+          762
+        ],
+        "expressionBox": [
+          175,
+          746,
+          335,
+          762
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 36,
+        "expression": "${error}",
+        "ocrSequence": "${errorl}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          382,
+          765,
+          389,
+          781
+        ],
+        "closeBraceBox": [
+          446,
+          765,
+          452,
+          781
+        ],
+        "expressionBox": [
+          382,
+          765,
+          452,
+          781
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 40,
+        "expression": "${pageContext.request.contextPath}",
+        "ocrSequence": "${pageContext.request.contextPath}",
+        "sourceLeft": "\"",
+        "sourceRight": "/",
+        "dollarBox": [
+          193,
+          841,
+          200,
+          857
+        ],
+        "closeBraceBox": [
+          491,
+          841,
+          497,
+          857
+        ],
+        "expressionBox": [
+          193,
+          841,
+          497,
+          857
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 43,
+          "recolored": 43,
+          "finalChanged": 43
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 43,
+        "expression": "${not empty product}",
+        "ocrSequence": "${notemptyproduct}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          211,
+          898,
+          218,
+          914
+        ],
+        "closeBraceBox": [
+          383,
+          898,
+          389,
+          914
+        ],
+        "expressionBox": [
+          211,
+          898,
+          389,
+          914
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 44,
+        "expression": "${product.id}",
+        "ocrSequence": "${product.id}",
+        "sourceLeft": "'",
+        "sourceRight": "'",
+        "dollarBox": [
+          607,
+          917,
+          614,
+          933
+        ],
+        "closeBraceBox": [
+          716,
+          917,
+          722,
+          933
+        ],
+        "expressionBox": [
+          607,
+          917,
+          722,
+          933
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      }
+    ]
+  },
+  "automated": {
+    "recoloredPixels": 4977,
+    "outsideELMaskChangedPixels": 0,
+    "frameGlyphHits": 0,
+    "allComponentsInsideCanvas": true,
+    "legendItems": 8
+  },
+  "frameEvidence": [
+    {
+      "language": "html",
+      "lines": [
+        3,
+        22
+      ],
+      "box": [
+        62,
+        136,
+        976,
+        380
+      ],
+      "glyphBounds": [
+        67,
+        139,
+        1031,
+        513
+      ],
+      "rightMarginPx": 7,
+      "bottomMarginPx": 3,
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "html",
+      "lines": [
+        24,
+        47
+      ],
+      "box": [
+        62,
+        536,
+        739,
+        455
+      ],
+      "glyphBounds": [
+        66,
+        539,
+        794,
+        988
+      ],
+      "rightMarginPx": 7,
+      "bottomMarginPx": 3,
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "jsp",
+      "lines": [
+        1,
+        2
+      ],
+      "box": [
+        62,
+        98,
+        596,
+        38
+      ],
+      "glyphBounds": [
+        65,
+        101,
+        651,
+        133
+      ],
+      "rightMarginPx": 7,
+      "bottomMarginPx": 3,
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "css",
+      "lines": [
+        15,
+        19
+      ],
+      "box": [
+        134,
+        364,
+        711,
+        95
+      ],
+      "glyphBounds": [
+        141,
+        367,
+        838,
+        456
+      ],
+      "rightMarginPx": 7,
+      "bottomMarginPx": 3,
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "jstl",
+      "lines": [
+        7,
+        11
+      ],
+      "box": [
+        96,
+        213,
+        537,
+        93
+      ],
+      "glyphBounds": [
+        103,
+        216,
+        626,
+        303
+      ],
+      "rightMarginPx": 7,
+      "bottomMarginPx": 3,
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "jstl",
+      "lines": [
+        28,
+        31
+      ],
+      "box": [
+        96,
+        612,
+        501,
+        74
+      ],
+      "glyphBounds": [
+        103,
+        615,
+        590,
+        683
+      ],
+      "rightMarginPx": 7,
+      "bottomMarginPx": 3,
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "jstl",
+      "lines": [
+        35,
+        37
+      ],
+      "box": [
+        62,
+        744,
+        469,
+        56
+      ],
+      "glyphBounds": [
+        67,
+        747,
+        524,
+        797
+      ],
+      "rightMarginPx": 7,
+      "bottomMarginPx": 3,
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "jstl",
+      "lines": [
+        43,
+        45
+      ],
+      "box": [
+        96,
+        896,
+        705,
+        56
+      ],
+      "glyphBounds": [
+        103,
+        899,
+        794,
+        949
+      ],
+      "rightMarginPx": 7,
+      "bottomMarginPx": 3,
+      "borderGlyphHits": 0
+    }
+  ],
+  "visual": {
+    "100%": "PASS — 全圖構圖、說明配置、圖例與邊界已檢查",
+    "200%": "PASS — 分類框、行尾、空白行、連線與安全距離已檢查",
+    "400%": "PASS — 每個 EL 的 $、{、內容、} 與左右鄰字已逐項檢查"
+  },
+  "notes": []
+}

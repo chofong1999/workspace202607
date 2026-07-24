@@ -1,0 +1,7 @@
+{
+  "image": "productlist_第02頁_sop2-4_r03.png",
+  "status": "FAIL",
+  "round": "r03",
+  "reason": "JavaScript 細框仍碰觸相鄰字形抗鋸齒像素，未交付",
+  "delivered": false
+}

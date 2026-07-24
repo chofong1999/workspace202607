@@ -1,0 +1,466 @@
+{
+  "qaVersion": 1,
+  "image": "productform_第03頁_sop2-4_layout03_r01.png",
+  "source": "productform__p03.png",
+  "project": "mvproduct0721",
+  "status": "PASS",
+  "sop": "2.4",
+  "visualSpecVersion": "3",
+  "round": "layout03_r01",
+  "elScheme": {
+    "id": "CAND-EL-001",
+    "name": "粉紅字形",
+    "formalSelection": false
+  },
+  "layoutMethod": {
+    "name": "同色編號標記",
+    "badgeMap": {
+      "1": "HTML",
+      "2": "CSS",
+      "3": "JSP 指令／JSP 註解",
+      "4": "JSTL",
+      "5": "JSP Action",
+      "6": "Java scriptlet",
+      "7": "EL",
+      "8": "JavaScript"
+    },
+    "longCrossPageConnectors": 0,
+    "connectorCrossings": 0,
+    "shortConnectors": 1,
+    "minimumParallelCenterlineGapPx": 4,
+    "minimumVisibleGapBetween2pxStrokesPx": 2,
+    "overlappingOrTooCloseFramePairs": 0,
+    "openEdgeFallbacks": 2
+  },
+  "independentBoundaryEvidence": {
+    "method": "tesseract.js character-box OCR on each original screenshot line; no fixed-width formula",
+    "expressionCount": 9,
+    "allDollarAndCloseBracePixelsRecolored": true,
+    "allLeftAndRightNeighborPixelsUnchanged": true,
+    "expressions": [
+      {
+        "line": 40,
+        "expression": "${pageContext.request.contextPath}",
+        "ocrSequence": "${pageContext.request.contextPath}",
+        "sourceLeft": "\"",
+        "sourceRight": "/",
+        "dollarBox": [
+          193,
+          144,
+          200,
+          160
+        ],
+        "closeBraceBox": [
+          491,
+          144,
+          497,
+          160
+        ],
+        "expressionBox": [
+          193,
+          144,
+          497,
+          160
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 43,
+          "recolored": 43,
+          "finalChanged": 43
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 43,
+        "expression": "${not empty product}",
+        "ocrSequence": "${notemptyproduct}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          211,
+          201,
+          218,
+          217
+        ],
+        "closeBraceBox": [
+          383,
+          201,
+          389,
+          217
+        ],
+        "expressionBox": [
+          211,
+          201,
+          389,
+          217
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 44,
+        "expression": "${product.id}",
+        "ocrSequence": "${product.id}",
+        "sourceLeft": "'",
+        "sourceRight": "'",
+        "dollarBox": [
+          607,
+          220,
+          614,
+          236
+        ],
+        "closeBraceBox": [
+          716,
+          220,
+          722,
+          236
+        ],
+        "expressionBox": [
+          607,
+          220,
+          722,
+          236
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 50,
+        "expression": "${product.name}",
+        "ocrSequence": "${product.namel}",
+        "sourceLeft": "'",
+        "sourceRight": "'",
+        "dollarBox": [
+          391,
+          334,
+          398,
+          350
+        ],
+        "closeBraceBox": [
+          518,
+          334,
+          524,
+          350
+        ],
+        "expressionBox": [
+          391,
+          334,
+          524,
+          350
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 56,
+        "expression": "${product.price}",
+        "ocrSequence": "${product.price}",
+        "sourceLeft": "'",
+        "sourceRight": "'",
+        "dollarBox": [
+          391,
+          448,
+          398,
+          464
+        ],
+        "closeBraceBox": [
+          524.75,
+          448,
+          529.5,
+          464
+        ],
+        "expressionBox": [
+          391,
+          448,
+          529.5,
+          464
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 62,
+        "expression": "${product.stock}",
+        "ocrSequence": "${product.stock}",
+        "sourceLeft": "'",
+        "sourceRight": "'",
+        "dollarBox": [
+          391,
+          562,
+          398,
+          578
+        ],
+        "closeBraceBox": [
+          527,
+          562,
+          540,
+          578
+        ],
+        "expressionBox": [
+          391,
+          562,
+          540,
+          578
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 54,
+          "recolored": 54,
+          "finalChanged": 54
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 68,
+        "expression": "${product.category}",
+        "ocrSequence": "${product.category}",
+        "sourceLeft": "'",
+        "sourceRight": "'",
+        "dollarBox": [
+          391,
+          676,
+          398,
+          692
+        ],
+        "closeBraceBox": [
+          554,
+          676,
+          560,
+          692
+        ],
+        "expressionBox": [
+          391,
+          676,
+          560,
+          692
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 74,
+        "expression": "${not empty product}",
+        "ocrSequence": "${notemptyproduct}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          337,
+          790,
+          344,
+          806
+        ],
+        "closeBraceBox": [
+          509,
+          790,
+          515,
+          806
+        ],
+        "expressionBox": [
+          337,
+          790,
+          515,
+          806
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 78,
+        "expression": "${pageContext.request.contextPath}",
+        "ocrSequence": "${pageContext.request.contextPath}",
+        "sourceLeft": "\"",
+        "sourceRight": "/",
+        "dollarBox": [
+          391,
+          866,
+          398,
+          882
+        ],
+        "closeBraceBox": [
+          689,
+          866,
+          695,
+          882
+        ],
+        "expressionBox": [
+          391,
+          866,
+          695,
+          882
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 43,
+          "recolored": 43,
+          "finalChanged": 43
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      }
+    ]
+  },
+  "automated": {
+    "outsideELMaskChangedPixels": 0,
+    "sourceGlyphOverwrittenOutsideEL": 0,
+    "frameGlyphHits": 0,
+    "connectorCrossings": 0,
+    "allComponentsInsideCanvas": true,
+    "legendItems": 8,
+    "frameBorderOverlapPairs": 0,
+    "frameBorderTooClosePairs": 0
+  },
+  "frameEvidence": [
+    {
+      "language": "html",
+      "lines": [
+        40,
+        81
+      ],
+      "box": [
+        62,
+        142,
+        835,
+        797
+      ],
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "jsp",
+      "lines": [
+        39,
+        39
+      ],
+      "box": [
+        62,
+        123,
+        123,
+        17
+      ],
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "jsp",
+      "lines": [
+        42,
+        42
+      ],
+      "box": [
+        95,
+        180,
+        261,
+        17
+      ],
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "jstl",
+      "lines": [
+        43,
+        45
+      ],
+      "box": [
+        96,
+        199,
+        705,
+        56
+      ],
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "jstl",
+      "lines": [
+        73,
+        76
+      ],
+      "box": [
+        168,
+        770,
+        477,
+        74
+      ],
+      "borderGlyphHits": 0
+    }
+  ],
+  "visual": {
+    "100%": "PASS — 同色編號對應清楚，無交錯長引線或重疊框線",
+    "200%": "PASS — 不同色平行框線中心距至少 4 px；空間不足處採開口框，框線未碰字",
+    "400%": "PASS — 每個 EL 與左右鄰字逐項檢查"
+  },
+  "notes": [
+    "layout03：修正不同色框線共線／過近；巢狀框向外分離，安全空間不足的相鄰框使用開口邊。"
+  ]
+}

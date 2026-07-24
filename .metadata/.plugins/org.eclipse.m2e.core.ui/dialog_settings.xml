@@ -75,6 +75,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\workspace202607\mvrest0724"/>
 			<item value="C:\workspace202607\mvproduct0721"/>
 			<item value="C:\workspace202607\mvproject0721"/>
 			<item value="C:\workspace202607\mvwebFilter0720"/>

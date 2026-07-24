@@ -1,0 +1,557 @@
+{
+  "qaVersion": 1,
+  "image": "productlist_第02頁_sop2-4_layout02_r01.png",
+  "source": "productlist__p02.png",
+  "project": "mvproduct0721",
+  "status": "PASS",
+  "sop": "2.4",
+  "visualSpecVersion": "2",
+  "round": "layout02_r01",
+  "elScheme": {
+    "id": "CAND-EL-001",
+    "name": "粉紅字形",
+    "formalSelection": false
+  },
+  "layoutMethod": {
+    "name": "同色編號標記",
+    "badgeMap": {
+      "1": "HTML",
+      "2": "CSS",
+      "3": "JSP 指令／JSP 註解",
+      "4": "JSTL",
+      "5": "JSP Action",
+      "6": "Java scriptlet",
+      "7": "EL",
+      "8": "JavaScript"
+    },
+    "longCrossPageConnectors": 0,
+    "connectorCrossings": 0,
+    "shortConnectors": 2
+  },
+  "independentBoundaryEvidence": {
+    "method": "tesseract.js character-box OCR on each original screenshot line; no fixed-width formula",
+    "expressionCount": 12,
+    "allDollarAndCloseBracePixelsRecolored": true,
+    "allLeftAndRightNeighborPixelsUnchanged": true,
+    "expressions": [
+      {
+        "line": 53,
+        "expression": "${products}",
+        "ocrSequence": "${products}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          445,
+          333,
+          452,
+          349
+        ],
+        "closeBraceBox": [
+          536,
+          333,
+          542,
+          349
+        ],
+        "expressionBox": [
+          445,
+          333,
+          542,
+          349
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 55,
+        "expression": "${p.id}",
+        "ocrSequence": "${p.id}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          445,
+          371,
+          452,
+          387
+        ],
+        "closeBraceBox": [
+          500,
+          371,
+          506,
+          387
+        ],
+        "expressionBox": [
+          445,
+          371,
+          506,
+          387
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 56,
+        "expression": "${p.name}",
+        "ocrSequence": "${p.name}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          445,
+          390,
+          452,
+          406
+        ],
+        "closeBraceBox": [
+          518,
+          390,
+          524,
+          406
+        ],
+        "expressionBox": [
+          445,
+          390,
+          524,
+          406
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 57,
+        "expression": "${p.price}",
+        "ocrSequence": "${p.price}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          544,
+          409,
+          551,
+          425
+        ],
+        "closeBraceBox": [
+          626,
+          409,
+          632,
+          425
+        ],
+        "expressionBox": [
+          544,
+          409,
+          632,
+          425
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 60,
+        "expression": "${p.stock < 10}",
+        "ocrSequence": "${p.stock<18}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          481,
+          466,
+          488,
+          482
+        ],
+        "closeBraceBox": [
+          608,
+          466,
+          614,
+          482
+        ],
+        "expressionBox": [
+          481,
+          466,
+          614,
+          482
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 61,
+        "expression": "${p.stock}",
+        "ocrSequence": "${p.stock}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          733,
+          485,
+          740,
+          501
+        ],
+        "closeBraceBox": [
+          815,
+          485,
+          821,
+          501
+        ],
+        "expressionBox": [
+          733,
+          485,
+          821,
+          501
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 64,
+        "expression": "${p.stock}",
+        "ocrSequence": "${p.stock}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          517,
+          542,
+          524,
+          558
+        ],
+        "closeBraceBox": [
+          599,
+          542,
+          605,
+          558
+        ],
+        "expressionBox": [
+          517,
+          542,
+          605,
+          558
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 68,
+        "expression": "${p.category}",
+        "ocrSequence": "${p.category}",
+        "sourceLeft": "\"",
+        "sourceRight": "\"",
+        "dollarBox": [
+          445,
+          618,
+          452,
+          634
+        ],
+        "closeBraceBox": [
+          554,
+          618,
+          560,
+          634
+        ],
+        "expressionBox": [
+          445,
+          618,
+          560,
+          634
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 71,
+        "expression": "${pageContext.request.contextPath}",
+        "ocrSequence": "${pageContext.request.contextPath}",
+        "sourceLeft": "\"",
+        "sourceRight": "/",
+        "dollarBox": [
+          400,
+          675,
+          407,
+          691
+        ],
+        "closeBraceBox": [
+          698,
+          675,
+          704,
+          691
+        ],
+        "expressionBox": [
+          400,
+          675,
+          704,
+          691
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 43,
+          "recolored": 43,
+          "finalChanged": 43
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 71,
+        "expression": "${p.id}",
+        "ocrSequence": "${p.1d}",
+        "sourceLeft": "=",
+        "sourceRight": "\"",
+        "dollarBox": [
+          868,
+          675,
+          875,
+          691
+        ],
+        "closeBraceBox": [
+          923,
+          675,
+          929,
+          691
+        ],
+        "expressionBox": [
+          868,
+          675,
+          929,
+          691
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 73,
+        "expression": "${pageContext.request.contextPath}",
+        "ocrSequence": "${pageContext.request.contextPath}",
+        "sourceLeft": "\"",
+        "sourceRight": "/",
+        "dollarBox": [
+          400,
+          713,
+          407,
+          729
+        ],
+        "closeBraceBox": [
+          698,
+          713,
+          704,
+          729
+        ],
+        "expressionBox": [
+          400,
+          713,
+          704,
+          729
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 43,
+          "recolored": 43,
+          "finalChanged": 43
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      },
+      {
+        "line": 73,
+        "expression": "${p.id}",
+        "ocrSequence": "${p.id}",
+        "sourceLeft": "=",
+        "sourceRight": "\"",
+        "dollarBox": [
+          886,
+          713,
+          893,
+          729
+        ],
+        "closeBraceBox": [
+          941,
+          713,
+          947,
+          729
+        ],
+        "expressionBox": [
+          886,
+          713,
+          947,
+          729
+        ],
+        "dollar": {
+          "foreground": 64,
+          "recolored": 64,
+          "finalChanged": 64
+        },
+        "closeBrace": {
+          "foreground": 42,
+          "recolored": 42,
+          "finalChanged": 42
+        },
+        "leftNeighborChangedPixels": 0,
+        "rightNeighborChangedPixels": 0
+      }
+    ]
+  },
+  "automated": {
+    "outsideELMaskChangedPixels": 0,
+    "sourceGlyphOverwrittenOutsideEL": 0,
+    "frameGlyphHits": 0,
+    "connectorCrossings": 0,
+    "allComponentsInsideCanvas": true,
+    "legendItems": 8
+  },
+  "frameEvidence": [
+    {
+      "language": "html",
+      "lines": [
+        41,
+        79
+      ],
+      "box": [
+        62,
+        105,
+        991,
+        739
+      ],
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "jstl",
+      "lines": [
+        53,
+        77
+      ],
+      "box": [
+        204,
+        331,
+        849,
+        475
+      ],
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "jstl",
+      "lines": [
+        59,
+        66
+      ],
+      "box": [
+        312,
+        447,
+        615,
+        150
+      ],
+      "borderGlyphHits": 0
+    },
+    {
+      "language": "jstl",
+      "lines": [
+        81,
+        84
+      ],
+      "box": [
+        62,
+        865,
+        253,
+        74
+      ],
+      "borderGlyphHits": 0
+    }
+  ],
+  "visual": {
+    "100%": "PASS — 編號與說明框一一對應，無交錯長引線",
+    "200%": "PASS — 分類框、編號、括號及短連線未碰字",
+    "400%": "PASS — 每個 EL 與左右鄰字逐項檢查"
+  },
+  "notes": [
+    "JavaScript 使用青色 [8] 單行括號，onclick attribute 仍屬 HTML。"
+  ]
+}

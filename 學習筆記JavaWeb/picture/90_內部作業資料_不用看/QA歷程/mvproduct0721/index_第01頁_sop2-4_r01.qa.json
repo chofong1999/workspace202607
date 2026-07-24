@@ -1,0 +1,41 @@
+{
+  "task": "IMG-MVPRODUCT0721-PARTIAL-001",
+  "source": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\01_原始截圖\\mvproduct0721\\index__p01.png",
+  "output": "C:\\workspace202607\\學習筆記JavaWeb\\picture\\02_標註成品\\01_未驗收\\mvproduct0721\\index_標註.png",
+  "languageRegions": {
+    "html": {
+      "lines": [
+        1,
+        5
+      ],
+      "status": "PASS"
+    },
+    "javaScriptlet": {
+      "line": 3,
+      "text": "<%= response.sendRedirect(\"products/list\"); %>",
+      "status": "PASS",
+      "pixelBounds": [
+        99,
+        134,
+        347,
+        156
+      ]
+    },
+    "el": {
+      "count": 0,
+      "status": "NOT_APPLICABLE"
+    }
+  },
+  "checks": {
+    "openable": true,
+    "targetTabVisible": true,
+    "sourceTextUnchanged": true,
+    "frameTextCollision": false,
+    "legendEightItems": true
+  },
+  "status": "PASS",
+  "image": "index_第01頁_sop2-4_r01.png",
+  "sop": "2.4",
+  "round": "r01",
+  "elScheme": "N/A（來源無 EL）"
+}

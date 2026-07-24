@@ -1,0 +1,7 @@
+{
+  "image": "productlist_第03頁_sop2-4_r04.png",
+  "status": "FAIL",
+  "round": "r04",
+  "reason": "JavaScript 細框空間不足，無法同時避開外側引號與 return，改由 r05 使用右側單行括號",
+  "delivered": false
+}
